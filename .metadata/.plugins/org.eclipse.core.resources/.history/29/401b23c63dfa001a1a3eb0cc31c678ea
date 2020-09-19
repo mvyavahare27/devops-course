@@ -1,0 +1,41 @@
+package com.intro;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Client {
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+		System.out.println("***********Post loading`******************");
+		
+		Employee emp1 = (Employee) context.getBean("employee1");
+		System.out.println(emp1);
+		
+		Employee emp2 = (Employee) context.getBean("employee2");
+		System.out.println(emp2);
+		
+		Employee emp3 = (Employee) context.getBean("employee3");
+		System.out.println(emp3);
+		
+		Employee emp4 = (Employee) context.getBean("employee4");
+		System.out.println(emp4);
+		
+		
+		Employee emp5 = (Employee) context.getBean("employee5");
+		System.out.println(emp5);
+		
+		
+		
+		
+		/*Person person = (Person) context.getBean("employeeBean");
+		System.out.println(person);
+		 
+		Car car = (Car) context.getBean("carBean");
+		System.out.println(car);
+		*/
+		
+	}
+
+}

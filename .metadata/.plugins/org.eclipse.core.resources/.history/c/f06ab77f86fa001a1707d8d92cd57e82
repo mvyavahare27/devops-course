@@ -1,0 +1,11 @@
+package com.cg.dao;
+
+public class EmployeeDao {
+	
+	public void create()
+	{
+		
+		
+	}
+
+}

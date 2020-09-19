@@ -1,0 +1,5 @@
+INDEX VERSION 1.3+G:\CDAC\HibernateTest\learnxJdbc\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+0.index
+3850432752.index
+2003615229.index
+4250502333.index

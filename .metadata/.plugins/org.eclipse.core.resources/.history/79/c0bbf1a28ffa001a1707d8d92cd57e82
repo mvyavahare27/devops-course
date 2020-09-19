@@ -1,0 +1,28 @@
+package com.cg.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.cg.entity.Employee;
+
+public class EmployeeDao {
+	
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+	
+	public void create(Employee employee)
+	{
+		
+		String sql = "insert into employee_tbl(id,name,age) values(?,?,?)";
+		
+		jdbcTemplate.update(sql ,
+				
+				new Object[]{
+						
+						employee.getId(),
+						employee.getName(),
+						employee.getAge()
+				});
+	}
+
+}

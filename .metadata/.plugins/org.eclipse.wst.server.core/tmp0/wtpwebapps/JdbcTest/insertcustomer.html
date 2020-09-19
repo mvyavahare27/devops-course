@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<body bgcolor="Lightskyblue">
+<center>
+<h1><strong>Registration</strong></h1>
+<form action="InsertCustomer" method="POST">  
+<label> Name: </label>         
+<input type="text" name="name" placeholder="Name" required="true" minlength="2" maxlength="15" /> <br> <br>  
+
+<label>Mobile No:</label>  
+ <input type="text" name="mobile" placeholder="Mobile" required="true" minlength="10" maxlength="10" /> <br> <br>     
+<br><br>  
+<input type="submit" value="Add" onclick="message()"/>  
+</form>  
+
+<p id="demo">
+<br>
+<a href="CustomerRecord">CustomerRecord</a>
+
+</center>
+<script>
+			function message(){
+				var txt;
+				  if (confirm("Do you want to add Customer?")) {
+				    txt = "";
+				  } else {
+				    txt = "Sorry! You pressed Cancle";
+				  }
+				  document.getElementById("demo").innerHTML = txt;
+				
+			}
+</script>
+</body>
+</html>

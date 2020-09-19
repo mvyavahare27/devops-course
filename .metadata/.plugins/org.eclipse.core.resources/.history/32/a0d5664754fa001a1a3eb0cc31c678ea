@@ -1,0 +1,18 @@
+package com.intro;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class AppConfig {
+	
+	private String name;
+	
+	public void createPerson()
+	{
+		String name="Jack";
+		
+		System.out.println(name);
+	}
+	
+
+}

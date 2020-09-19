@@ -1,0 +1,12 @@
+package com.intro;
+
+public class AppConfig {
+	
+	
+	public Person createPerson()
+	{
+		
+	}
+	
+
+}
