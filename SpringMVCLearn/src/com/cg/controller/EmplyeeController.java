@@ -1,5 +1,8 @@
 package com.cg.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
@@ -7,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.cg.dao.EmployeeDao;
@@ -35,6 +39,44 @@ public class EmplyeeController {
 		employeeDao.create(register);
 		
 		modelAndView.addObject("data", "successfully registered");
+		
+		return modelAndView;
+	}
+	
+	@RequestMapping(value="/show",method=RequestMethod.GET)
+	public ModelAndView showRecords()
+	{
+		ModelAndView modelAndView = new ModelAndView();
+		
+		List<Employee> mylist = new ArrayList<Employee>();
+		
+		mylist = employeeDao.employeeList();
+		
+		
+		for(Employee emp : mylist)
+		{
+			System.out.println(emp.getName());
+			System.out.println(emp.getAge());
+			modelAndView.addObject("name", emp.getName());
+			modelAndView.addObject("age", emp.getName());
+			
+		}
+		
+		modelAndView.addObject("showData", mylist);
+		modelAndView.setViewName("showdata");
+		return modelAndView;
+	}
+	
+	@RequestMapping(value="/del",method=RequestMethod.GET)
+	public ModelAndView deleteData(@RequestParam int id)
+	{
+		ModelAndView modelAndView = new ModelAndView();
+		
+		modelAndView.addObject("deleteMsg","User Id deleted:"+id);
+		
+		employeeDao.deleteCustomer(id);
+		
+		modelAndView.setViewName("showdata");
 		
 		return modelAndView;
 	}
