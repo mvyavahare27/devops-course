@@ -8,6 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import com.mv.springmvc.entity.CheckAvailblity;
 
+/*Name: Mukund 
+Title: Dao class for checkavailablity
+Date: 16-10-20
+*/
 @Repository
 public class CheckAvailablityDao {
 	
@@ -19,7 +23,6 @@ public class CheckAvailablityDao {
 		Session session = sessionFactory.openSession();
 		Transaction tx = session.beginTransaction();
 		session.save(check);
-		System.out.println("Insert Successfully");
 		tx.commit();
 		session.close();
 		

@@ -17,10 +17,12 @@ public class ApplicationController {
 	@Autowired
 	private CheckAvailablityDao checkavailableDao;
 	
+	ModelAndView modelAndView =  new ModelAndView();
+	
 	@RequestMapping(method=RequestMethod.GET)
 	public ModelAndView index(){
 		
-		ModelAndView modelAndView =  new ModelAndView();
+		
 		modelAndView.setViewName("index");
 		
 		return modelAndView;
@@ -30,19 +32,13 @@ public class ApplicationController {
 	@RequestMapping(value="check",method=RequestMethod.GET)
 	public ModelAndView check_index(){
 		
-		ModelAndView modelAndView = new ModelAndView();
-		
 		modelAndView.setViewName("index");
 		
 		return modelAndView;
 	}
 	@RequestMapping(value="checkdata",method=RequestMethod.POST)
 	public ModelAndView check_availblity(@ModelAttribute CheckAvailblity data){
-		
-		ModelAndView modelAndView = new ModelAndView();
-		
-		System.out.println("date: "+data);
-		
+	
 		checkavailableDao.saveData(data);
 		
 		return modelAndView;

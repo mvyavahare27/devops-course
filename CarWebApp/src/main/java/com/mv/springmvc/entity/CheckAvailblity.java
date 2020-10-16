@@ -90,7 +90,7 @@ public class CheckAvailblity {
 
 	@Override
 	public String toString() {
-		return "CheckAvailblity [id=" + id + ", city=" + city + ", pick_up_date=" + pick_up_date + ", pick_up_time="
+		return "CheckAvailblity [city=" + city + ", pick_up_date=" + pick_up_date + ", pick_up_time="
 				+ pick_up_time + ", return_date=" + return_date + ", return_time=" + return_time + "]";
 	}
 	
