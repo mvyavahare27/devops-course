@@ -1,0 +1,52 @@
+package com.cg.springmvc.dao;
+
+import javax.sql.DataSource;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.cg.springmvc.entity.Employee;
+
+@Repository
+public class EmployeeDao {
+	
+	@Autowired
+	private DataSource dataSource;
+	
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+	
+	@Autowired
+	private SessionFactory sessionFactoryBean;
+	
+	public void saveData(Employee emp){
+		
+		try {
+			
+			Session session = sessionFactoryBean.openSession();
+			
+			Transaction tx = session.beginTransaction();
+			session.save(emp);
+			System.out.println("Added Successfully");
+			tx.commit();
+			session.close();
+			/*String sql = "INSERT into employee_tbl(eid,name,age) VALUES(?,?,?)";
+			
+			jdbcTemplate.update(sql, 
+					new Object[]{
+							emp.getEid(),
+							emp.getName(),
+							emp.getAge()
+							
+					});
+			*/
+		} catch (Exception e) {
+			
+			System.out.println("Exception:"+e);
+		}
+	}
+}

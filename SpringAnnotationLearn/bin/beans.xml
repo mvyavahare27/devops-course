@@ -6,15 +6,41 @@
  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
  http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/context
  http://www.springframework.org/schema/context/spring-context-4.0.xsd">
- 
- <!-- <bean id="personBean" class="com.intro.Person" autowire="byType">
- 	<property name="name" value="Jack"></property>
- 	
+
+<!-- Through Constructor -->
+<!-- <bean id="personBean" class="com.intro.Person" autowire="constructor">
+ 	<constructor-arg index="0" value="Jacky"></constructor-arg>
  </bean>
- <bean id="car" class="com.intro.Car">
+ <bean id="car1" class="com.intro.Car">
+ 	<constructor-arg index="0" value="Honda"></constructor-arg>
+ 	<constructor-arg index="1" value="Blue"></constructor-arg>
+ 	
+ </bean>  -->
+
+
+<!-- Through Type -->
+<bean id="personBean" class="com.intro.Person" autowire="byType">
+ 	<property name="name" value="Jack"></property>
+ </bean>
+ <bean id="car1" class="com.intro.Car" >
  	<property name="model" value="BMW R8"></property>
  	<property name="color" value="black"></property>
- </bean>  -->
+ </bean>
+  
  
-
-</beans>
+ <!-- Through Aspect -->
+ 
+ <bean id="aspectBean" class="com.intro.AspectTest"></bean>
+ <!-- <bean id="person" class="com.intro.Person"/> -->
+ 
+  <bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" />
+ 
+ </beans>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

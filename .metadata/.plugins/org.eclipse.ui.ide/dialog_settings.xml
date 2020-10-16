@@ -12,6 +12,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="G:\CDAC\HibernateTest\learnxJdbc\SpringMVCMavenApplication"/>
+			<item value="G:\CDAC\Java Framework\Spring_Source\Spring\Code\TrainingTestWithAnnotationJavaConfig"/>
 			<item value="G:\CDAC\project\Final_Container_STorage_System"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

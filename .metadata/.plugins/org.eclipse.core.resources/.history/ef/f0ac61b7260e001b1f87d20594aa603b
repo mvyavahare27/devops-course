@@ -1,0 +1,5 @@
+package com.cg.springmvc.entity;
+
+public class Employee {
+
+}

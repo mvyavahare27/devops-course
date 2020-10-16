@@ -7,5 +7,10 @@
 	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day1-Spring/Day1-Spring/Core jars/spring-context-4.3.7.RELEASE.jar"/>
 	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day1-Spring/Day1-Spring/Core jars/spring-core-4.3.7.RELEASE.jar"/>
 	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day1-Spring/Day1-Spring/Core jars/spring-expression-4.3.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day2-Spring/AOP/libs/aopalliance-.jar"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day2-Spring/AOP/libs/aspectjrt-1.7.1.jar"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day2-Spring/AOP/libs/aspectjweaver-1.6.8.jar"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day2-Spring/AOP/libs/spring-aspects-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day1-Spring/Day1-Spring/spring-aop-4.3.7.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -33,5 +33,10 @@
 	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day3-spring/Day3/HibernateJars/jboss-logging-annotations-1.2.0.Beta1.jar"/>
 	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day3-spring/Day3/HibernateJars/jta-1.1.jar"/>
 	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day3-spring/Day3/HibernateJars/spring-orm-4.3.7.RELEASE.jar" sourcepath="WebContent/WEB-INF/lib"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day2-Spring/AOP/libs/aopalliance-.jar"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day2-Spring/AOP/libs/aspectjrt-1.7.1.jar"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day2-Spring/AOP/libs/aspectjweaver-1.6.8.jar"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day2-Spring/AOP/libs/spring-aspects-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="G:/CDAC/Java Framework/Spring_Source/Spring/Jars/Spring_Jars/Day1-Spring/Day1-Spring/spring-aop-4.3.7.RELEASE.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -10,8 +10,18 @@ private String name;
 	private Car car;
 	
 	public Person() {
-		super();
+		//super();
+		System.out.println("Person instance created");
 	}
+	
+
+	public Person(String name, Car car) {
+		super();
+		System.out.println("Person instance created");
+		this.name = name;
+		this.car = car;
+	}
+
 
 	public Person(Car car) {
 		
@@ -39,7 +49,14 @@ private String name;
 	public String toString() {
 		return "Person [name=" + name + ", car=" + car + "]";
 	}
-
-	
+	//I want AOP message println("AOP Start") before ("Person Method") message 
+	public void create(){
+		
+		System.out.println("Person Method");
+		int i = 3;
+		if(i > 2){
+			throw new RuntimeException("Exception");
+		}
+	}
 
 }

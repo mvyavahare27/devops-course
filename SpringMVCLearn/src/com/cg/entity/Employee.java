@@ -23,39 +23,46 @@ public Employee() {
 	super();
 }
 
-public Employee(int id, String name, int age) {
-	this();
-	this.eid = id;
+public Employee(int id, int eid, String name, int age) {
+	super();
+	this.eid = eid;
 	this.name = name;
 	this.age = age;
 }
 
-
 public int getId() {
+	return id;
+}
+
+
+public int getEid() {
 	return eid;
 }
-public void setId(int id) {
-	this.eid = id;
+
+public void setEid(int eid) {
+	this.eid = eid;
 }
+
 public String getName() {
 	return name;
 }
+
 public void setName(String name) {
 	this.name = name;
 }
+
 public int getAge() {
 	return age;
 }
+
 public void setAge(int age) {
 	this.age = age;
 }
 
 @Override
 public String toString() {
-	return "Employee [id=" + eid + ", name=" + name + ", age=" + age + "]";
+	return "Employee [id=" + id + ", eid=" + eid + ", name=" + name + ", age=" + age + "]";
 }
-
-
 
 
 }

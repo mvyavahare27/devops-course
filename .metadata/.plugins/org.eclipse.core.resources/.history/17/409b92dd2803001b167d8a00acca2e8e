@@ -1,0 +1,18 @@
+package com.intro;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class HelloWorldMain {
+	public static void main(String[] args) {
+		
+		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(HelloWorldConfig.class);
+		
+		Person person = applicationContext.getBean(Person.class);
+		
+		System.out.println(person);
+	
+	}
+	
+
+}

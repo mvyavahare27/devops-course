@@ -28,15 +28,19 @@ public class EmployeeDao {
 	@Autowired
 	private SessionFactory sessionFactoryBean;
 	
+	/*@Autowired
+	private AspectTest aspectTest;*/
+	
 	public void create(Employee register)
 	{
 		try
-		{
+		{	//I perform AOP with Transaction code in AspectTest.java file
 			Session session = sessionFactoryBean.openSession();
-			Transaction tx = session.beginTransaction();
+			/*Transaction tx = session.beginTransaction();*/
 			session.save(register);
-			tx.commit();
+			/*tx.commit();*/
 			session.close();
+			System.out.println("Session close");
 			
 		/*String sql = "insert into employee_tbl(id,name,age) values(?,?,?)";
 		
@@ -60,7 +64,7 @@ public class EmployeeDao {
 	public List employeeList()
 	{
 		Session session = sessionFactoryBean.openSession();
-		Transaction tx = session.beginTransaction();
+		/*Transaction tx = session.beginTransaction();*/
 		
 		List cst = new ArrayList<>();
 		try
@@ -74,8 +78,8 @@ public class EmployeeDao {
 			{
 			Employee customer = (Employee) iterator.next();
 			
-			}
-		tx.commit();
+		}
+		/*tx.commit();*/
 		session.close();
 		
 		}
@@ -89,13 +93,16 @@ public class EmployeeDao {
 	}
 	public  void deleteCustomer(int id)
 	{
+		
 		try
 		{
+			System.out.println("dao Id:"+id);
 		Session session = sessionFactoryBean.openSession();
 		Transaction tx = session.beginTransaction();
 		
 		Object o = session.load(com.cg.entity.Employee.class, new Integer(id));
 		Employee c = (Employee) o;
+		System.out.println(c);
 		session.delete(c);
 		System.out.println("deleted successfully");
 		tx.commit();

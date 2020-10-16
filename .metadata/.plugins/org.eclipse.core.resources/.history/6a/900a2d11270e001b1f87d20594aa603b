@@ -1,0 +1,8 @@
+package com.cg.springmvc.entity;
+
+public class Employee {
+
+	private int eid;
+	private String name;
+	private int age;
+}

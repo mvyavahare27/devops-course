@@ -16,7 +16,7 @@
 			<thead>
 			<tr>
 				<th>Id:</th>
-				<td> <input type="text" name="id"/> </td>
+				<td> <input type="text" name="eid"/> </td>
 			</tr>
 				<tr>
 				<th>Name:</th>
@@ -37,7 +37,7 @@
 	</form>
 	</center>
 	<center>${data}</center>
-	
+	<p>Welcome to register page</p>
 <center><a href="/SpringMVCLearn/mvc/show">Employee Records</a></center>
 </body>
 </html>

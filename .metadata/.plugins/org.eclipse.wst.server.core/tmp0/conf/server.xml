@@ -123,7 +123,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="G:\CDAC\HibernateTest\learnxJdbc\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="G:\CDAC\HibernateTest\learnxJdbc\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\JdbcTest" path="/JdbcTest" reloadable="true" source="org.eclipse.jst.jee.server:JdbcTest"/><Context docBase="G:\CDAC\HibernateTest\learnxJdbc\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ContainerSystem" path="/ContainerSystem" reloadable="true" source="org.eclipse.jst.jee.server:ContainerSystem"/><Context docBase="G:\CDAC\HibernateTest\learnxJdbc\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SpringMVCLearn" path="/SpringMVCLearn" reloadable="true" source="org.eclipse.jst.jee.server:SpringMVCLearn"/></Host>
+      <Context docBase="G:\CDAC\HibernateTest\learnxJdbc\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="G:\CDAC\HibernateTest\learnxJdbc\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SpringMavenLearn" path="/SpringMavenLearn" reloadable="true" source="org.eclipse.jst.jee.server:SpringMavenLearn"/></Host>
     </Engine>
   </Service>
 </Server>

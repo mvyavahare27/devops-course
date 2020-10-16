@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy source folder &apos;java&apos; to &apos;SpringMavenLearn&apos;&#x0D;&#x0A;- Original project: &apos;SpringMVCMavenApplication&apos;&#x0D;&#x0A;- Destination element: &apos;SpringMavenLearn&apos;&#x0D;&#x0A;- Original element: &apos;SpringMVCMavenApplication/src/main/java&apos;" description="Copy source folder" element1="/src\/main\/java" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1602677946759" target="/SpringMavenLearn" version="1.0"/>
+</session>
