@@ -15,5 +15,6 @@
 	<input type="submit" value="check">
 	
 </form>
+${exMsg}
 </body>
 </html>

@@ -39,6 +39,7 @@
     	<property name="annotatedClasses">
     		<list>
     			<value>com.mv.springmvc.entity.CheckAvailblity</value>
+    			<value>com.mv.springmvc.entity.Register</value>
     		</list>
     	</property>
     	<property name="hibernateProperties">
@@ -49,6 +50,7 @@
     	</property>
      </bean>
      
-  	 <bean id="checkavailableDao" class="com.mv.springmvc.dao.CheckAvailablityDao"></bean> 
+  	 <bean id="checkavailableDao" class="com.mv.springmvc.dao.CheckAvailablityDao"></bean>
+  	 <bean id="registerDao" class="com.mv.springmvc.dao.RegisterDao"></bean>  
 
 </beans>
