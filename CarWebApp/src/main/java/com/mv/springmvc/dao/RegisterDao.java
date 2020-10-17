@@ -30,8 +30,6 @@ public class RegisterDao {
 		
 		String hql = "FROM Register r where r.email=?";
 		
-		System.out.println(hql);
-		
 		Query query = session.createQuery(hql);
 		
 		query.setParameter(0, email);
@@ -41,7 +39,7 @@ public class RegisterDao {
 		int num = result.size();
 		
 			if(num > 0){
-				
+				System.out.println("Email Already exists");
 				throw new RuntimeException("Email Already exists");
 				
 			}

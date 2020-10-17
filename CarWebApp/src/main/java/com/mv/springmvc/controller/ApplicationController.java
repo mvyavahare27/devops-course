@@ -13,6 +13,7 @@ import com.mv.springmvc.dao.CheckAvailablityDao;
 import com.mv.springmvc.dao.RegisterDao;
 import com.mv.springmvc.entity.CheckAvailblity;
 import com.mv.springmvc.entity.Register;
+import com.mv.springmvc.services.CheckAvailablityService;
 
 @Controller
 @RequestMapping("/")
@@ -23,10 +24,7 @@ public class ApplicationController {
 	Title: Controller*/
 	
 	@Autowired
-	private CheckAvailablityDao checkavailableDao;
-	
-	@Autowired
-	private RegisterDao registerDao;
+	private CheckAvailablityService checkavailableService;
 		
 	ModelAndView modelAndView =  new ModelAndView();
 	
@@ -43,7 +41,7 @@ public class ApplicationController {
 	@RequestMapping(value="checkdata",method=RequestMethod.POST)
 	public ModelAndView check_availblity(@ModelAttribute CheckAvailblity data){
 	
-		checkavailableDao.saveData(data);
+		checkavailableService.saveDataService(data);
 		
 		return modelAndView;
 	}
@@ -52,7 +50,7 @@ public class ApplicationController {
 	@RequestMapping(value="register",method=RequestMethod.POST)
 	public ModelAndView register(@ModelAttribute Register register){
 		
-		registerDao.registerData(register);
+		checkavailableService.saveRegisterData(register);
 		
 		return modelAndView;
 	}
