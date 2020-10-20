@@ -55,5 +55,30 @@ public class RegisterDao {
 		
 		
 	}
+	public int loginData(Register register){
+		
+		Session session = sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		String email = register.getEmail();
+		String password = register.getPassword();
+		String hql = "FROM Register r where r.email=? and r.password=?";
+		
+		Query query = session.createQuery(hql);
+		query.setParameter(0, email);
+		query.setParameter(1, password);
+		
+		List result = query.list();
+		int num = result.size();	
+		if(num == 0){
+			System.out.println("login failed");
+		}
+	tx.commit();
+	
+	session.close();
+	
+	return num;
+		
+		
+	}
 
 }

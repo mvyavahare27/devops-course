@@ -8,6 +8,9 @@ import com.mv.springmvc.entity.CheckAvailblity;
 import com.mv.springmvc.entity.Register;
 
 public class CheckAvailablityService {
+	/*Name: Mukund Vyavahare
+	Date:17-10-2020
+	Title: Service class*/
 	
 	@Autowired
 	private CheckAvailablityDao checkavailableDao;
@@ -21,5 +24,9 @@ public class CheckAvailablityService {
 	
 	public void saveRegisterData(Register register){
 		registerDao.registerData(register);
+	}
+	
+	public int checkLogin(Register register){
+		return registerDao.loginData(register);
 	}
 }

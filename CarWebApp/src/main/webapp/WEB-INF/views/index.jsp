@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+Email: {email}
 <h1>Welcome to car rental services</h1>
 <form action="checkdata" method="POST" ModelAttribute="data">
 	City:<input type="text" name="city"><br>
